@@ -7,6 +7,8 @@ export function validateEmail(email: string): boolean {
     if (!emailSections[0] || emailSections[0].length === 0) return false;
     if (!emailSections[1] || emailSections[1].length === 0) return false;
 
+    if (!emailSections[1].includes(".")) return false;
+
     return true;
 }
 
