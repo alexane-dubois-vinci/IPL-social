@@ -5,11 +5,11 @@ describe("Email Validator", () => {
         expect(validateEmail("emailexample")).toBe(false);
     });
 
-    it("should return false when given an email that with no characters prior to @", () => {
+    it("should return false when given an email with no characters prior to @", () => {
         expect(validateEmail("@vinci.be")).toBe(false);
     });
 
-    it("should return false when given an email that has no characters followin @", () => {
+    it("should return false when given an email that has no characters following @", () => {
         expect(validateEmail("alexane.dubois@")).toBe(false);
     })
 })
