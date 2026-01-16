@@ -25,8 +25,9 @@ A **GitHub Actions** CI pipeline is configured to automatically run the test sui
 **1. Install dependencies:**
 ```bash
 npm install
+```
 
-**2. Run tests:**
+**2. Run test**
 ```bash
 npm test
 
