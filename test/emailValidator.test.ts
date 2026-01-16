@@ -11,5 +11,9 @@ describe("Email Validator", () => {
 
     it("should return false when given an email that has no characters following @", () => {
         expect(validateEmail("alexane.dubois@")).toBe(false);
-    })
+    });
+
+    it("should return false when given an email containing space(s)", () => {
+        expect(validateEmail("alexane.dubois @vinci.be")).toBe(false);
+    });
 })
