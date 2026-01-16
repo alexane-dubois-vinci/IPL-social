@@ -19,5 +19,9 @@ describe("Email Validator", () => {
 
     it("should return false when given an email with no dot", () => {
         expect(validateEmail("alexane@vinci")).toBe(false);
+    });
+
+    it("shoudl return false when givan an email with a dot being the last character", () => {
+        expect(validateEmail("alexane@vinci.")).toBe(false);
     })
 })

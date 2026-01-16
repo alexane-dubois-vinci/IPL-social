@@ -9,6 +9,8 @@ export function validateEmail(email: string): boolean {
 
     if (!emailSections[1].includes(".")) return false;
 
+    if (emailSections[1].endsWith(".")) return false;
+
     return true;
 }
 
